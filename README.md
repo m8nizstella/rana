@@ -1,15 +1,30 @@
-# rana
-# Rana Project
+# 🌌 Eridanus Wealth - Rana Portfolio Engine
+# Lead Developer: Stella Muniz
 
-Welcome to the **Rana Project**, the core analytical engine under development for the future **Eridanus Wealth** ecosystem. 
+class RanaWealthEngine:
+    def __init__(self, investor_name, base_currency="USD"):
+        self.investor = investor_name
+        self.currency = base_currency
+        self.portfolio_assets = {} # Guardará os ativos cadastrados
 
-Named after the star *Delta Eridani* (Rana) in the celestial river constellation, this project represents the foundation of our data and financial architecture.
+    def add_asset(self, asset_name, amount, current_price, allocation_type):
+        """Cadastra um novo ativo na carteira do investidor"""
+        print(f"Rana: Registering {asset_name} into the portfolio...")
+        pass
 
-## Overview
-This repository contains the ongoing development, core logic, and algorithms designed to process financial data and deliver robust insights.
+    def calculate_tax_impact(self, profit, structure_type="Holding"):
+        """Simula a mordida dos impostos na PF vs Holding Familiar"""
+        print(f"Rana: Calculating tax impact using {structure_type} framework...")
+        if structure_type == "Individual":
+            return profit * 0.275 # 27.5% de imposto na Pessoa Física
+        return profit * 0.10 # 10% otimizado na Holding
+        
+    def generate_wealth_report(self):
+        """Consolida os dados e gera o relatório final de performance"""
+        print("Rana: Consolidating performance and asset allocation metrics...")
+        pass
 
-## Tech Stack
-*Under development*
-
----
-*Managed by Stella Muniz | Eridanus Wealth Portfolio*
+if __name__ == "__main__":
+    # Testando o ecossistema Stella Muniz
+    rana = RanaWealthEngine(investor_name="Stella Muniz")
+    print("Rana Wealth Engine is ready for execution.")
